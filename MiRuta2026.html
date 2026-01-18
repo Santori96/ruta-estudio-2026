@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agustín 2026 - Central de Estudio</title>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: white; margin: 0; padding: 40px; }
+        .header { text-align: center; margin-bottom: 50px; }
+        .header h1 { font-size: 2.5em; color: #38bdf8; margin-bottom: 10px; }
+        .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1200px; margin: auto; }
+        
+        .card { background: #1e293b; border-radius: 15px; overflow: hidden; transition: transform 0.3s; border: 1px solid #334155; position: relative; }
+        .card:hover { transform: translateY(-10px); border-color: #38bdf8; }
+        .step-badge { position: absolute; top: 10px; left: 10px; background: #38bdf8; color: #0f172a; padding: 5px 12px; border-radius: 20px; font-weight: bold; z-index: 10; }
+        
+        .thumbnail { width: 100%; height: 160px; background-size: cover; background-position: center; border-bottom: 1px solid #334155; }
+        .content { padding: 20px; }
+        .content h3 { margin: 0 0 10px 0; color: #f1f5f9; }
+        .content p { font-size: 0.9em; color: #94a3b8; height: 50px; }
+        
+        .btn { display: block; text-align: center; background: #38bdf8; color: #0f172a; padding: 12px; text-decoration: none; border-radius: 8px; font-weight: bold; transition: 0.2s; }
+        .btn:hover { background: #7dd3fc; }
+        .btn-secondary { background: #334155; color: white; margin-top: 10px; }
+        .btn-secondary:hover { background: #475569; }
+
+        /* Imágenes representativas */
+        .img-nico { background-image: url('https://img-c.udemycdn.com/course/480x270/2433066_39f5_2.jpg'); }
+        .img-harvard { background-image: url('https://i.ytimg.com/vi/nLRL_NcnK-4/maxresdefault.jpg'); }
+        .img-fcc { background-image: url('https://www.freecodecamp.org/news/content/images/2021/06/python-scientific-computing.png'); }
+        .img-comunidad { background-image: url('https://argentinaprograma.com/static/media/logo.8912693a.png'); background-color: white; background-size: contain; background-repeat: no-repeat; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Mi Ruta de Estudio 2026</h1>
+        <p>Enfoque: Python, Data Science e Inteligencia Artificial</p>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="step-badge">1</div>
+            <div class="thumbnail img-nico"></div>
+            <div class="content">
+                <h3>Nicolás Schürmann</h3>
+                <p>Tu base principal en español. Dominio de sintaxis y lógica básica.</p>
+                <a href="https://www.udemy.com/home/my-courses/learning/" target="_blank" class="btn">Abrir Udemy</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="step-badge">2</div>
+            <div class="thumbnail img-harvard"></div>
+            <div class="content">
+                <h3>CS50P Harvard</h3>
+                <p>Introducción técnica de alto nivel. Aprende a pensar como programador.</p>
+                <a href="http://www.youtube.com/watch?v=nLRL_NcnK-4" target="_blank" class="btn">Ver en YouTube</a>
+                <a href="https://cs50xenespanol.github.io/python/" target="_blank" class="btn btn-secondary">Guía en GitHub</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="step-badge">3</div>
+            <div class="thumbnail img-fcc"></div>
+            <div class="content">
+                <h3>FreeCodeCamp</h3>
+                <p>Certificación de Computación Científica con Python. Práctica pura.</p>
+                <a href="https://www.freecodecamp.org/espanol/learn/scientific-computing-with-python/" target="_blank" class="btn">Ir al Curso</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="step-badge">4</div>
+            <div class="thumbnail img-comunidad"></div>
+            <div class="content">
+                <h3>Comunidad Local</h3>
+                <p>Networking en Argentina y dudas técnicas con colegas.</p>
+                <a href="https://argentinaprograma.com/" target="_blank" class="btn">Argentina Programa</a>
+                <a href="https://www.reddit.com/r/devsarg/" target="_blank" class="btn btn-secondary">Foro DevsArg</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
